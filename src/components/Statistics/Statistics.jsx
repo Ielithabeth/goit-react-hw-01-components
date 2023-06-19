@@ -3,7 +3,6 @@ import PropTypes from "prop-types"
 
 export const Statistics = ({ title, stats }) => {
     return (
-        <>
         <Section>
             {title && (<h2>{title}</h2>)}
             
@@ -18,7 +17,6 @@ export const Statistics = ({ title, stats }) => {
             })}
             </ul>
         </Section>
-        </>
     )
 }
 

@@ -3,7 +3,6 @@ import PropTypes from "prop-types"
 
 export const TransactionHistory = ({ items }) => {
     return (
-        <>
         <Table>
             <thead>
                <tr>
@@ -27,7 +26,6 @@ export const TransactionHistory = ({ items }) => {
 
              </tbody>
         </Table>
-        </>
     )
 }
 

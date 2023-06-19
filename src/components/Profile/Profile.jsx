@@ -3,7 +3,6 @@ import PropTypes from "prop-types"
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
     return (
-      <>
         <ProfileContainer>
            <div>
                <img
@@ -31,7 +30,6 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
                 </li>
               </ul>
         </ProfileContainer>
-        </>
     )
 }
 

@@ -4,7 +4,6 @@ import PropTypes from "prop-types"
 
 export const FriendList = ({ friends }) => {
     return (
-        <>
         <List>
             <FriendListItem
                 avatar={friends.avatar}
@@ -12,7 +11,6 @@ export const FriendList = ({ friends }) => {
                 isOnline={friends.isOnline}
             />
         </List>
-        </>
     )
 }
 
