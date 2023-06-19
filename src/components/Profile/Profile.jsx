@@ -1,34 +1,37 @@
+import { ProfileContainer, P } from "./Profile.styled"
 import PropTypes from "prop-types"
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
     return (
-        <div className="profile">
-           <div className="description">
+      <>
+        <ProfileContainer>
+           <div>
                <img
                  src={avatar}
                  alt="User avatar"
-                 className="avatar"
+                 width="240"
                />
-               <p className="name">{username}</p>
-               <p className="tag">@{tag}</p>
-               <p className="location">{location}</p>
+               <P>{username}</P>
+               <P>@{tag}</P>
+               <P>{location}</P>
             </div>
 
-            <ul className="stats">
+            <ul>
                 <li>
-                  <span className="label">Followers</span>
-                  <span className="quantity"> {stats.followers}</span>
+                  <P className="stats-name">Followers</P>
+                  <span> {stats.followers}</span>
                 </li>
                 <li>
-                  <span className="label">Views</span>
-                  <span className="quantity"> {stats.views}</span>
+                  <P className="stats-name">Views</P>
+                  <span> {stats.views}</span>
                 </li>
                 <li>
-                  <span className="label">Likes</span>
-                  <span className="quantity"> {stats.likes}</span>
+                  <P className="stats-name">Likes</P>
+                  <span> {stats.likes}</span>
                 </li>
               </ul>
-        </div>
+        </ProfileContainer>
+        </>
     )
 }
 
