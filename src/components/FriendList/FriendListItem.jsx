@@ -16,5 +16,3 @@ export const FriendListItem = () => {
         </>
     )
 }
-
-console.log(FriendListItem())
