@@ -4,13 +4,19 @@ import PropTypes from "prop-types"
 
 export const FriendList = ({ friends }) => {
     return (
+        <>
         <List>
-            <FriendListItem
-                avatar={friends.avatar}
-                name={friends.name}
-                isOnline={friends.isOnline}
-            />
+            {friends.map(friend => (
+              <FriendListItem
+                key={friend.id}
+                avatar={friend.avatar}
+                name={friend.name}
+                isOnline={friend.isOnline}
+                id={friend.id}
+              />
+            ))}
         </List>
+        </>
     )
 }
 
